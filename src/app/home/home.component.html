@@ -1,0 +1,89 @@
+<section class="info">
+  <div>
+    <div class="title">
+      <h1>{{ "home.name" | translate }}</h1>
+    </div>
+    <div class="phrase">
+      <p [innerHTML]="'home.subtitle.1' | translate"></p>
+      <p [innerHTML]="'home.subtitle.2' | translate"></p>
+      <p [innerHTML]="'home.subtitle.3' | translate: { date, backend }"></p>
+    </div>
+  </div>
+  <div>
+    <h1>{{ "home.now.title" | translate }}</h1>
+    <p [innerHTML]="'home.now.phrase.1' | translate"></p>
+    <p>{{ "home.now.phrase.2" | translate }}</p>
+  </div>
+  <div>
+    <h1>{{ "home.job.title" | translate }}</h1>
+
+    <!-- Capgemini -->
+    <details>
+      <summary>Capgemini</summary>
+      <p [innerHTML]="'home.job.1.intro' | translate"></p>
+      <br />
+      <p [innerHTML]="'home.job.1.competencies' | translate"></p>
+      <br />
+      <div class="icons">
+        <img
+          *ngFor="let icon of capgeminiIcons"
+          src="./assets/imgs/icons/{{ icon }}.svg"
+          alt="{{ icon }}"
+        />
+      </div>
+    </details>
+    <!-- Capgemini -->
+    <!-- Teralco -->
+    <details>
+      <summary>Teralco</summary>
+      <p [innerHTML]="'home.job.2.intro' | translate"></p>
+      <br />
+      <p [innerHTML]="'home.job.2.competencies' | translate"></p>
+      <br />
+      <div class="icons">
+        <img
+          *ngFor="let icon of teralcoIcons"
+          src="./assets/imgs/icons/{{ icon }}.svg"
+          alt="{{ icon }}"
+        />
+      </div>
+    </details>
+    <!-- Teralco -->
+    <!-- NTT Data -->
+    <details>
+      <summary>NTT Data</summary>
+      <p [innerHTML]="'home.job.3.intro' | translate"></p>
+      <br />
+      <p [innerHTML]="'home.job.3.competencies' | translate"></p>
+      <br />
+      <div class="icons">
+        <img
+          *ngFor="let icon of nttIcons"
+          src="./assets/imgs/icons/{{ icon }}.svg"
+          alt="{{ icon }}"
+        />
+      </div>
+    </details>
+    <!-- NTT Data -->
+    <!-- El Negrito -->
+    <details>
+      <summary>Lotería el Negrito</summary>
+      <p [innerHTML]="'home.job.4.intro' | translate"></p>
+      <br />
+      <p [innerHTML]="'home.job.4.competencies' | translate"></p>
+      <br />
+      <div class="icons">
+        <img
+          *ngFor="let icon of negritoIcons"
+          src="./assets/imgs/icons/{{ icon }}.svg"
+          alt="{{ icon }}"
+        />
+      </div>
+    </details>
+    <!-- El Negrito -->
+  </div>
+  <img
+    src="./assets/imgs/jeronimo_gascon_photo.png"
+    alt="Jerónimo Gascón Sánchez"
+  />
+</section>

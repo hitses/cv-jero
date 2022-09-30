@@ -1,0 +1,37 @@
+nav {
+  background-color: #000;
+  position: sticky;
+  top: 0px;
+  font-family: "OxygenRegular";
+  height: 50px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  a {
+    color: #fffefa;
+    text-decoration: none;
+    cursor: default;
+  }
+  a:hover {
+    color: #fecc00;
+  }
+  .active {
+    color: #fecc00;
+  }
+
+  div {
+    width: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    img {
+      height: 25px;
+      border-radius: 3px;
+      cursor: pointer;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+      -o-border-radius: 3px;
+    }
+  }
+}

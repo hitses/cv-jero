@@ -1,0 +1,28 @@
+<nav>
+  <a
+    routerLink=""
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: true }"
+    >{{ "navbar.home" | translate }}</a
+  >
+  <a routerLink="contact" routerLinkActive="active">{{
+    "navbar.contact" | translate
+  }}</a>
+  <a
+    href="./assets/files/{{ 'navbar.download.file' | translate }}"
+    download="{{ 'navbar.download.renameFile' | translate }}"
+    >{{ "navbar.download.name" | translate }}</a
+  >
+  <div>
+    <img
+      (click)="changeLang('es')"
+      src="./assets/flags/es.svg"
+      alt="Spain flag"
+    />
+    <img
+      (click)="changeLang('en')"
+      src="./assets/flags/gb.svg"
+      alt="United Kingdom flag"
+    />
+  </div>
+</nav>

@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "OxygenLight";
+  src: local("Oxygen"), url(./assets/fonts/Oxygen-Light.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "OxygenRegular";
+  src: local("Oxygen"),
+    url(./assets/fonts/Oxygen-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "OxygenBold";
+  src: local("Oxygen"), url(./assets/fonts/Oxygen-Bold.ttf) format("truetype");
+}
+
+body {
+  color: rgb(255, 254, 244);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

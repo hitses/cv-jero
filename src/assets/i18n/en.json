@@ -1,0 +1,52 @@
+{
+  "navbar": {
+    "home": "Home",
+    "contact": "Contact",
+    "download": {
+      "name": "Download CV",
+      "file": "dogEn.jpg",
+      "renameFile": "gasconSanchezJeronimoCvEn.jpg"
+    }
+  },
+  "home": {
+    "name": "I'm Jerónimo Gascón",
+    "subtitle": {
+      "1": "Boy from a town between the interior and the coast.",
+      "2": "I'm a web developer in Spain. I love NodeJS. I love the backend",
+      "3": "I have been programming for more than {{ date }} years, of which {{ backend }} I have dedicated them to the backend."
+    },
+    "now": {
+      "title": "Currently...",
+      "phrase": {
+        "1": "I work at <a href='https://www.capgemini.com/' target='_blank'>Capgemini</a>.",
+        "2": "I live as a couple and I keep fit thanks to the best sport in the world: frontennis."
+      }
+    },
+    "job": {
+      "title": "But let's talk about work",
+      "1": {
+        "intro": "As I said, I now work for a French company called Capgemini. The site is great, and it allows me to do such cool things as carry out projects alone or together with colleagues who are just as good or even better than me.",
+        "competencies": "Tasks that I usually carry out are the implementation and improvement of functionalities in the back part of projects of great importance. The technology that I use the most is NodeJS on the server part together with Express in most cases. But in some other ways, I use cutting-edge technologies such as serverless with AWS lambdas.",
+        "tecnologiesTitle": "Tecnologies"
+      },
+      "2": {
+        "intro": "But before that I was in a Spanish company from Elche: <a href='https://teralco.com/' target='_blank'>Teralco</a>. A place where I noticed how my programming skills took a colossal leap. The company's level of concern for its employees was what they cared about the most.",
+        "competencies": "And what was I doing during my stay in this company? Well, true wonders. From the creation of a server for a US client in the medical sector with NodeJS, ExpressJS and MongoDB to revamping Paco Rabanne's frontend with Angular. Not everything is backend.",
+        "tecnologiesTitle": "Tecnologies"
+      },
+      "3": {
+        "intro": "And we arrived at the company that opened its arms to me when I asked. I was young (wait, I'm still young) and inexperienced in the world of web development. But with an immense desire to learn, <a href='https://www.nttdata.com/global/en/' target='_blank'>NTT Data</a> welcomed me like a son.",
+        "competencies": "Here I had real challenges ahead. I was assigned to incredible projects with a myriad of technologies. I was able to improve in NodeJS with Express, I used MongoDB, PostgreSQL, DynamoDB, MySQL, Angular in the frontend and React in the mobile part, I learned to use Python to maintain ETLs and all that in an AWS cloud environment... It's a good bunch of technologies!",
+        "tecnologiesTitle": "Tecnologies"
+      },
+      "4": {
+        "intro": "And we come to the beginning. Do you remember your first love? Well, this is similar. You are nervous about how it will turn out, you think if you are doing things right but you are willing to do your best and you have to start somewhere. That is what happened to me in <a href='https://www.loteriaelnegrito.com/' target='_blank'>Lotería el Negrito</a>. In this place I take the best memories with unforgettable colleagues. I love you guys!",
+        "competencies": "When you look back and remember how it all started, at times you put your head in your hands but in general you remember everything with great affection. This is where I started working with Angular and NodeJS with ExpressJS, implementing features for projects of the company itself. A full-fledged startup. Here MySQL was the queen of databases. Typescript was a protagonist of half of these endearing projects.",
+        "tecnologiesTitle": "Tecnologies"
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact"
+  }
+}
