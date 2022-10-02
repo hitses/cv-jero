@@ -10,14 +10,13 @@ import { Mail } from '../models/contact.model';
 })
 export class ContactComponent implements OnInit {
   contact: FormGroup = this.fb.group({
-    username: [, [Validators.required, Validators.minLength(2)]],
-    email: [, [Validators.required, Validators.email]],
-    subject: [, [Validators.required, Validators.minLength(2)]],
-    content: [, [Validators.required, Validators.minLength(2)]],
+    username: ['Jero prueba', [Validators.required, Validators.minLength(2)]],
+    email: ['jerogassan@gmail.com', [Validators.required, Validators.email]],
+    subject: ['Jero prueba', [Validators.required, Validators.minLength(2)]],
+    content: ['Jero prueba', [Validators.required, Validators.minLength(2)]],
   });
 
   sendMail: boolean = false;
-  // waiting: boolean = false;
   sendedMail: boolean = false;
 
   constructor(
@@ -43,14 +42,11 @@ export class ContactComponent implements OnInit {
     this.contact.value.language = localStorage.getItem('language');
 
     const content: Mail = this.contact.value;
+    this.sendMail = true;
     this.contactService.sendMail(content).subscribe(async (response: any) => {
-      this.sendMail = true;
-      // if (!response) this.waiting = true;
       if (await response) {
-        // this.waiting = false;
         this.sendedMail = true;
       }
-      return await response;
     });
 
     this.contact.reset();
