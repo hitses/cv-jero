@@ -10,9 +10,15 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { NotFound404Component } from './not-found404/not-found404.component';
 import { ContactComponent } from './contact/contact.component';
-import { HttpClientModule, HttpClient } from '@angular/common/http';
+import {
+  HttpClientModule,
+  HttpClient,
+  HTTP_INTERCEPTORS,
+} from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
+import { SpinnerInterceptor } from './interceptors/spinner.interceptor';
+import { SpinnerComponent } from './spinner/spinner.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -26,6 +32,7 @@ export function createTranslateLoader(http: HttpClient) {
     NotFound404Component,
     ContactComponent,
     FooterComponent,
+    SpinnerComponent,
   ],
   imports: [
     BrowserModule,
@@ -40,7 +47,9 @@ export function createTranslateLoader(http: HttpClient) {
       },
     }),
   ],
-  providers: [],
+  providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: SpinnerInterceptor, multi: true },
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

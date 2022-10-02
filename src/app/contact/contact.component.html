@@ -38,8 +38,8 @@
   <button type="submit" *ngIf="!sendMail">
     {{ "contact.submit" | translate }}
   </button>
-  <!-- <button *ngIf="waiting" disabled>
-    <div class="spinner"></div>
-  </button> -->
+  <button *ngIf="sendMail && !sendedMail">
+    <app-spinner></app-spinner>
+  </button>
   <button *ngIf="sendedMail" disabled>✔︎</button>
 </form>
