@@ -12,6 +12,7 @@ import { NotFound404Component } from './not-found404/not-found404.component';
 import { ContactComponent } from './contact/contact.component';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
+import { FooterComponent } from './footer/footer.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -24,6 +25,7 @@ export function createTranslateLoader(http: HttpClient) {
     HomeComponent,
     NotFound404Component,
     ContactComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

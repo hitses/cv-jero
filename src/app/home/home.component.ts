@@ -27,6 +27,24 @@ export class HomeComponent implements OnInit {
     'python',
   ];
   negritoIcons = ['javascript', 'typescript', 'node', 'mysql', 'angular'];
+  geekshubsIcons = [
+    'html',
+    'css',
+    'scss',
+    'javascript',
+    'node',
+    'handlebars',
+    'mysql',
+    'mongo',
+    'react',
+    'redux',
+    'angular',
+    'typescript',
+    'git',
+    'github',
+    'scrum',
+  ];
+  fpIcons = ['html', 'css', 'mysql', 'javascript'];
 
   constructor() {}
 

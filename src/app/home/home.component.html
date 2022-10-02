@@ -11,12 +11,11 @@
   </div>
   <div>
     <h1>{{ "home.now.title" | translate }}</h1>
-    <p [innerHTML]="'home.now.phrase.1' | translate"></p>
-    <p>{{ "home.now.phrase.2" | translate }}</p>
+    <p>{{ "home.now.phrase.1" | translate }}</p>
   </div>
+  <!-- Works -->
   <div>
     <h1>{{ "home.job.title" | translate }}</h1>
-
     <!-- Capgemini -->
     <details>
       <summary>Capgemini</summary>
@@ -82,6 +81,45 @@
     </details>
     <!-- El Negrito -->
   </div>
+  <!-- Works -->
+
+  <!-- Studies -->
+  <div>
+    <h1>{{ "home.studies.title" | translate }}</h1>
+    <!-- GeeksHubs -->
+    <details>
+      <summary>GeeksHubs</summary>
+      <p [innerHTML]="'home.studies.geekshubs.1' | translate"></p>
+      <br />
+      <p [innerHTML]="'home.studies.geekshubs.2' | translate"></p>
+      <br />
+      <div class="icons">
+        <img
+          *ngFor="let icon of geekshubsIcons"
+          src="./assets/imgs/icons/{{ icon }}.svg"
+          alt="{{ icon }}"
+        />
+      </div>
+    </details>
+    <!-- GeeksHubs -->
+    <!-- Grado superior -->
+    <details>
+      <summary>{{ "home.studies.fp.title" | translate }}</summary>
+      <p [innerHTML]="'home.studies.fp.1' | translate"></p>
+      <br />
+      <p>{{ "home.studies.fp.2" | translate }}</p>
+      <br />
+      <div class="icons">
+        <img
+          *ngFor="let icon of fpIcons"
+          src="./assets/imgs/icons/{{ icon }}.svg"
+          alt="{{ icon }}"
+        />
+      </div>
+    </details>
+    <!-- Grado superior -->
+  </div>
+  <!-- Studies -->
   <img
     src="./assets/imgs/jeronimo_gascon_photo.png"
     alt="Jerónimo Gascón Sánchez"

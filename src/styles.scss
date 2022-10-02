@@ -14,8 +14,13 @@
   src: local("Oxygen"), url(./assets/fonts/Oxygen-Bold.ttf) format("truetype");
 }
 
+* {
+  background-color: black;
+  font-family: "OxygenRegular";
+}
+
 body {
-  color: rgb(255, 254, 244);
+  color: #fffefa;
   margin: 0;
   padding: 0;
   box-sizing: border-box;

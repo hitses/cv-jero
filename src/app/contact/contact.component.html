@@ -1,33 +1,43 @@
 <form (ngSubmit)="send()" [formGroup]="contact" autocomplete="off">
   <!-- Username -->
-  <label class="valid" *ngIf="!isntValid('username')">Nombre</label>
-  <label class="invalid" *ngIf="isntValid('username')"
-    >Nombre con mínimo 2 caracteres</label
-  >
+  <label class="valid" *ngIf="!isntValid('username')">{{
+    "contact.name" | translate
+  }}</label>
+  <label class="invalid" *ngIf="isntValid('username')">{{
+    "contact.invalidName" | translate
+  }}</label>
   <input type="text" formControlName="username" />
   <!-- Username -->
   <!-- Email -->
-  <label class="valid" *ngIf="!isntValid('email')">Correo electrónico</label>
-  <label class="invalid" *ngIf="isntValid('email')"
-    >Correo electrónico incorrecto</label
-  >
+  <label class="valid" *ngIf="!isntValid('email')">{{
+    "contact.email" | translate
+  }}</label>
+  <label class="invalid" *ngIf="isntValid('email')">{{
+    "contact.invalidEmail" | translate
+  }}</label>
   <input type="email" formControlName="email" />
   <!-- Email -->
   <!-- Subject -->
-  <label class="valid" *ngIf="!isntValid('subject')">Asunto</label>
-  <label class="invalid" *ngIf="isntValid('subject')"
-    >Asunto con mínimo 2 caracteres</label
-  >
+  <label class="valid" *ngIf="!isntValid('subject')">{{
+    "contact.subject" | translate
+  }}</label>
+  <label class="invalid" *ngIf="isntValid('subject')">{{
+    "contact.invalidSubject" | translate
+  }}</label>
   <input type="text" formControlName="subject" />
   <!-- Subject -->
   <!-- Content -->
-  <label class="valid" *ngIf="!isntValid('content')">Mensaje</label>
-  <label class="invalid" *ngIf="isntValid('content')"
-    >Mensaje con mínimo 2 caracteres</label
-  >
+  <label class="valid" *ngIf="!isntValid('content')">{{
+    "contact.message" | translate
+  }}</label>
+  <label class="invalid" *ngIf="isntValid('content')">{{
+    "contact.invalidMessage" | translate
+  }}</label>
   <textarea formControlName="content"></textarea>
   <!-- Content -->
-  <button type="submit" *ngIf="!sendMail">Enviar</button>
+  <button type="submit" *ngIf="!sendMail">
+    {{ "contact.submit" | translate }}
+  </button>
   <!-- <button *ngIf="waiting" disabled>
     <div class="spinner"></div>
   </button> -->
