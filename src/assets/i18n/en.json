@@ -67,5 +67,13 @@
     "message": "Message",
     "invalidMessage": "Message with minimum 2 characters",
     "submit": "Submit"
+  },
+  "notFound": {
+    "1": "Oh! Sorry I haven't found what you were looking for. Here you will only see a precious",
+    "2": "If you want to pick up where you left off, try from the",
+    "home": "home"
+  },
+  "footer": {
+    "captcha": "This site is protected by reCAPTCHA and the Google"
   }
 }

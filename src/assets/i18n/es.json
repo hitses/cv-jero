@@ -67,5 +67,13 @@
     "message": "Mensaje",
     "invalidMessage": "Mensaje con mínimo 2 caracteres",
     "submit": "Enviar"
+  },
+  "notFound": {
+    "1": "¡Vaya! Pacere que no he encontrado lo que buscabas. Aquí solo vas a ver un precioso",
+    "2": "Si quieres volver por donde lo dejaste, prueba desde el",
+    "home": "inicio"
+  },
+  "footer": {
+    "captcha": "Esta web está protegida por reCAPTCHA y Google"
   }
 }

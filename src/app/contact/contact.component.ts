@@ -10,10 +10,10 @@ import { Mail } from '../models/contact.model';
 })
 export class ContactComponent implements OnInit {
   contact: FormGroup = this.fb.group({
-    username: ['Jero prueba', [Validators.required, Validators.minLength(2)]],
-    email: ['jerogassan@gmail.com', [Validators.required, Validators.email]],
-    subject: ['Jero prueba', [Validators.required, Validators.minLength(2)]],
-    content: ['Jero prueba', [Validators.required, Validators.minLength(2)]],
+    username: [, [Validators.required, Validators.minLength(2)]],
+    email: [, [Validators.required, Validators.email]],
+    subject: [, [Validators.required, Validators.minLength(2)]],
+    content: [, [Validators.required, Validators.minLength(2)]],
   });
 
   sendMail: boolean = false;
