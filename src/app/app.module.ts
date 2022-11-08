@@ -19,6 +19,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
 import { SpinnerInterceptor } from './interceptors/spinner.interceptor';
 import { SpinnerComponent } from './spinner/spinner.component';
+import { RecaptchaV3Module, RECAPTCHA_V3_SITE_KEY } from 'ng-recaptcha';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -39,6 +40,7 @@ export function createTranslateLoader(http: HttpClient) {
     HttpClientModule,
     ReactiveFormsModule,
     AppRoutingModule,
+    RecaptchaV3Module,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
@@ -49,6 +51,10 @@ export function createTranslateLoader(http: HttpClient) {
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: SpinnerInterceptor, multi: true },
+    {
+      provide: RECAPTCHA_V3_SITE_KEY,
+      useValue: '6Lc6i-wiAAAAAIX6g2ePbogfrxX1EMMEJEWXI2P7',
+    },
   ],
   bootstrap: [AppComponent],
 })

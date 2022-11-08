@@ -1,8 +1,9 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
-import { environment } from '../../environments/environment';
 import { Mail } from '../models/contact.model';
+
+const URL = `https://jerodev.up.railway.app/api/mail/contact`;
 
 @Injectable({
   providedIn: 'root',
@@ -15,6 +16,6 @@ export class ContactService {
   }
 
   sendMail(mail: Mail): any {
-    return this.http.post(environment.url, { body: mail });
+    return this.http.post(URL, { body: mail });
   }
 }
